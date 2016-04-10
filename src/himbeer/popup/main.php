@@ -26,13 +26,13 @@ class Main extends PluginBase implements Listener{
                $joining = $jevent->getPlayer();
                $pname = $joining->getName();
                $jevent->setJoinMessage("");
-               $joinpop = str_replace("-player-", $pname, $this->coinfig->get("join"));
+               $joinpop = str_replace("-player-", $pname, $this->config->get("join"));
                $this->getServer()->broadcastPopup($joinpop);
           }elseif($this->config->get("mode") == "tip"){
                $joining = $jevent->getPlayer();
                $pname = $joining->getName();
                $jevent->setJoinMessage("");
-               $jointip = str_replace("-player-", $pname, $this->coinfig->get("join"));
+               $jointip = str_replace("-player-", $pname, $this->config->get("join"));
                $this->getServer()->broadcastTip($jointip);
           }
 	}
@@ -41,13 +41,13 @@ class Main extends PluginBase implements Listener{
                $quitting = $qevent->getPlayer();
                $pname = $quitting->getName();
                $qevent->setQuitMessage("");
-               $quitpop = str_replace("-player-", $pname, $this->coinfig->get("quit"));
+               $quitpop = str_replace("-player-", $pname, $this->config->get("quit"));
                $this->getServer()->broadcastPopup($quitpop);
 	     }elseif($this->config->get("mode") == "tip"){
                $quitting = $qevent->getPlayer();
                $pname = $quitting->getName();
                $qevent->setQuitMessage("");
-               $quittip = str_replace("-player-", $pname, $this->coinfig->get("quit"));
+               $quittip = str_replace("-player-", $pname, $this->config->get("quit"));
                $this->getServer()->broadcastTip($quittip);
 	     }
 	}
