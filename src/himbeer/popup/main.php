@@ -12,7 +12,7 @@ class Main extends PluginBase implements Listener{
      
      public function onEnable(){
           $this->getServer()->getPluginManager()->registerEvents($this,$this);
-          $this->getLogger()->info("SteakIt enabled!");
+          $this->getLogger()->info("JoinPopup-NoMessage enabled!");
           @mkdir($this->getDataFolder());
           $this->config = new Config ($this->getDataFolder() . "config.yml" , Config::YAML, array(
                "join" => "§a-player- joined the game!",
