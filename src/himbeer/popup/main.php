@@ -8,7 +8,7 @@ use pocketmine\utils\config;
 use pocketmine\event\player\PlayerJoinEvent;
 use pocketmine\event\player\PlayerQuitEvent;
 use pocketmine\event\player\PlayerDeathEvent;
-class Main extends PluginBase implements Listener{
+class main extends PluginBase implements Listener{
      
      public function onEnable(){
           $this->getServer()->getPluginManager()->registerEvents($this,$this);
