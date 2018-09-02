@@ -1,5 +1,12 @@
 ---
-mode: popup
-join: §a-player- joined the game!
-quit: §4-player- left the game!
+# Set to "popup" to use popups (replaces the held item's name)
+# Set to "tip" to use tips (above the held item's name)
+mode: "popup"
+
+# Set the join/quit message, "{player}" will be replaced with the player's name
+join: "§a{player} joined the game!"
+quit: "§4{player} left the game!"
+
+# Whether or not to stop sending normal chat messages for join/leave
+stop_messages: true
 ...
